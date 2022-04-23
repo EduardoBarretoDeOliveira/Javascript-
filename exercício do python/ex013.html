@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste salárial</title>
+</head>
+<body>
+    <script>
+        sal = Number(window.prompt(`Qual seu salária atual?`))
+        por = Number(window.prompt(`Quanto de aumento vai receber? (em%)`))
+        rea = sal/100 * (100 + por)
+        document.write(`Com ${por}% de aumento seu salário vai de ${sal} para ${rea.toFixed(2)}`)
+    </script>
+</body>
+</html>
