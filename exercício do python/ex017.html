@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cateto da hipotenusa</title>
+</head>
+<body>
+    <script>
+        co = Number(window.prompt(`Digite o valor do cateto oposto`))
+        ca = Number(window.prompt(`Digite o valor do cateto adjacente`))
+        h = (co**2 + ca**2) ** (1/2)
+        document.write(`Com cateto oposto valendo ${co} e cateto adjacente ${ca} a hipotenusa valerá ${h.toFixed(2)}`)
+    </script>
+</body>
+</html>
