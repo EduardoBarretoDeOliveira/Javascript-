@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+</head>
+<body>
+    <h1>Somando valores</h1>
+    <input type="number" name="n1" id="n1">
+    <input type="number" name="n2" id="n2">
+    <input type="button" value="somar" onclick="somar()">
+    <script>
+        function somar(){
+          tn1 = window.document.getElementById('n1')
+          tn2 = window.document.getElementById('n2')
+          n1 = Number(tn1.value)
+          n2 = Number(tn2.value)
+          s = n1 + n2
+          document.write(s)
+        }
+    </script>
+</body>
+</html>
