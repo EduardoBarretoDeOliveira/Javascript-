@@ -5,20 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando números</title>
+    <style>
+        body{
+            font-size: large;
+        }
+        input{
+            font-size: large;
+            width: 120px;
+        }
+        div#res{
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <h1>Somando valores</h1>
     <input type="number" name="n1" id="n1">
     <input type="number" name="n2" id="n2">
     <input type="button" value="somar" onclick="somar()">
+    <div id="res"> resultado </div>
     <script>
         function somar(){
           tn1 = window.document.getElementById('n1')
           tn2 = window.document.getElementById('n2')
+          r = window.document.getElementById('res')
           n1 = Number(tn1.value)
           n2 = Number(tn2.value)
           s = n1 + n2
-          document.write(s)
+          r.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`
         }
     </script>
 </body>
