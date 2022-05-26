@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(223, 196, 128);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+header{
+    color: white;
+}
+section{
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 15px;
+    width: 500px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.434);
+}
+div{
+    margin-top: 15px;
+}
+input{
+    margin: 17px;
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+footer{
+    color: white;
+    margin-top: 10%;
+    text-align: center;
+}
