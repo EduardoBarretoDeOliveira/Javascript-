@@ -6,13 +6,27 @@ function contar(){
     if ( ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
         window.alert(`[ERRO] algo de errado com os dados, tente novamente`)
     }else{
-        result.innerHTML = `Contando...`
+        result.innerHTML = `Contando... <br>`
         var i = Number(ini.value)
         var f = Number(fim.value)
         var p = Number(passo.value)
-
-        for(var c = i; c <= f;  c += p){
-            result.innerHTML += `${c}`
+        if (i > f){
+            for(var c = i; c >= f;  c -= p){
+                if(c - p < f){
+                    result.innerHTML += `${c} 🏁`
+                result.innerHTML += `Fim!`
+                }else{
+                    result.innerHTML += ` ${c} 👉` 
+                }
         }
     }
-}
+        for(var c = i; c <= f;  c += p){
+            if(c + p > f){
+                result.innerHTML += ` ${c} 🏁`
+                result.innerHTML += `Fim!` 
+            }else{result.innerHTML += `${c} 👉`
+        }
+            
+        }
+}}
+
