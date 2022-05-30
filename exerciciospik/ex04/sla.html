@@ -7,15 +7,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
-<body onload="load()">
+<body >
     <header>
         <h1>Tabuada</h1> 
     </header>
     <section>
-        <div> Número: <input type="number" name="num" id="n"></div>
-        <input type="button" value="mostrar tabuada" onclick="tab()">
+        <div> Número: <input type="number" name="num" id="txtn"></div>
+        <input type="button" value="mostrar tabuada" onclick="tabuada()">
         <div>
-            
+            <select name="tabuada" id="seltab" size = "10">
+                <option>Digite um número acima</option>
+            </select>
         </div>
      </section>
      <footer>@texugo apanhador</footer>
