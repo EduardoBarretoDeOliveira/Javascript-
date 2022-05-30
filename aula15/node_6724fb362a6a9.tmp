@@ -8,5 +8,4 @@ console.log(`O tamanho da lista é ${num.length}`)
 c = 0
 while(c < num.length){
     console.log(`A posição ${c} é ${num[c]}`)
-    c++
 }
