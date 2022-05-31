@@ -5,8 +5,7 @@ console.log(`A lista é ${num}`)
 num.sort()
 console.log(`A lista ordenada é ${num}`)
 console.log(`O tamanho da lista é ${num.length}`)
-c = 0
-while(c < num.length){
-    console.log(`A posição ${c} é ${num[c]}`)
-    c++
+for(let pos in num){
+    console.log(`A posição ${pos} é: ${num[pos]}`)
 }
+console.log(`A posição de 7 é ${num.indexOf(7)}`)
