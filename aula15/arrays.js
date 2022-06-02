@@ -9,3 +9,6 @@ for(let pos in num){
     console.log(`A posição ${pos} é: ${num[pos]}`)
 }
 console.log(`A posição de 7 é ${num.indexOf(7)}`)
+let n = 90
+num.push(n)
+console.log(`A lista é ${num}`)
